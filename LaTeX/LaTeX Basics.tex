@@ -1,0 +1,71 @@
+\documentclass{article}
+
+\author{Avinash Saravanan. This is the author.}
+\title{My first {\LaTeX} Document. This is a title. This is of article document class. }
+\date{11/22/18. This is the date.}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction. This is how you make a section. }
+
+This is some text!
+
+This is a new line in the editor! You have to make two returns for a new paragraph. Text will automatically wrap.\hfill \break
+This is a line break without indentation.
+
+This is a line without hfill. \break
+
+\section{Formatting}
+
+This is normal text.
+\textbf{This is bold text.}
+\textit{This is italic.}
+\emph{This is emphatic.}
+\underline{This is underline.}
+\underline{\textbf{This is underlined and bold}}
+
+
+"This is in quotation marks."
+
+``This is in proper quotation marks. Use ` at the beginning and ' at the end.''
+
+\section {Numbering\label{numbering}}
+
+\subsection{This is how you make a Subsection}
+\subsection{Lists}
+\textbf{This is an ordered list.}
+\begin{enumerate}
+\item Bread\label{bread}
+\begin{enumerate}
+\item sub entry 1
+\item sub entry 2
+\end {enumerate}
+\item butter
+\item cheese
+\end{enumerate}
+
+\textbf{This is an unordered list.}
+\begin{itemize}
+\item Corn
+\begin {itemize}
+\item sub entry 1
+\item sub entry 2
+\end {itemize}
+\item Maize
+\item Wheat
+\end{itemize}
+
+\section {References}
+
+This is a reference to section \ref{list}.
+
+This is a reference to section \ref{numbering}
+
+This is a reference to an item in the ordered list \ref{bread}
+
+
+\section {Labels\label{list}}
+
+\end{document}
