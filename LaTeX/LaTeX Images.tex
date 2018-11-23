@@ -1,0 +1,45 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{blindtext}
+\usepackage{wrapfig}
+\usepackage{float}
+
+\author{Avinash Saravanan}
+\title{The Logic of Images and Figures in {\LaTeX}}
+
+\begin{document}
+
+\maketitle
+
+Here is a new document.
+
+\begin{center}
+\includegraphics[width=\textwidth]{octocat.png}
+\includegraphics[width=3in, height=5in, keepaspectratio, angle=43]{octocat.png}
+\end{center}
+
+\blindtext
+
+In the figure below, you can see...
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{octocat.png}
+\caption{This is a caption}
+\end{figure}
+
+\blindtext
+
+\begin{wrapfigure}{r}{3in}
+\centering
+\includegraphics[width=2.5in]{octocat.png}
+\caption{Caption\label{latexpic}}
+
+Please refer to Figure \ref{latexpic}
+\end{wrapfigure}
+
+
+\blindtext
+
+\end{document}
