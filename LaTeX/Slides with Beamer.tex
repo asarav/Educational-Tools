@@ -1,0 +1,55 @@
+\documentclass{beamer}
+
+\title{Slide Shows in {\LaTeX} with Beamer}
+\author{Avinash Saravanan}
+
+\usetheme{Frankfurt}
+\usepackage{graphicx}
+\usepackage{blindtext}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\begin{frame}
+\frametitle{Frame Title}
+
+\begin{itemize}
+\item Frames\pause
+\item Beamer themes\pause
+\item Sections\pause
+\item Images\pause
+\item Columns
+\end{itemize}
+\end{frame}
+
+\section{Section 2}
+
+\begin{frame}
+\frametitle{Second Slide}
+\end{frame}
+
+\section{Images}
+\begin{frame}
+\frametitle{Images in Beamer}
+\includegraphics[width=3in]{octocat.png}
+\end{frame}
+
+\section{Columns}
+\begin{frame}
+\frametitle{Columns}
+
+\begin{columns}
+
+\column{.5\textwidth}
+\blindtext
+\column{.5\textwidth}
+\blindtext
+
+\end{columns}
+
+\end{frame}
+
+\end{document}
